@@ -12,7 +12,7 @@
 
         </style>
 
-        <title>Parameters</title>
+        <title>Title</title>
     </head>
     <body>
         <!-- HTML -->
@@ -25,44 +25,44 @@
 
             // EXAMPLE 1
 
-            function greet() {
-                document.write("Nice to meet you, " + name + "!<br>");
-            }
+            // function greet(name) {
+            //     document.write("Nice to meet you, " + name + "!<br>");
+            // }
 
-            var name = "Alice";
-            greet();
+            // // var name = "Alice";
+            // greet("Alice");
 
-            name = "Bob";
-            greet();
+            // // name = "Bob";
+            // greet("Bob");
 
 
 
             // EXAMPLE 2
 
-            // function verse() {
-            //     document.write("Old MacDonald had a farm, E I E I O<br>");
-            //     document.write("And on that farm he had a " + animal + ", E I E I O<br>");
-            //     document.write("With a " + noise + " " + noise + " here, and a " + noise + " " + noise + " there<br>");
-            //     document.write("Here a " + noise + ", there a " + noise + ", everywhere a " + noise + " " + noise + "<br>");
-            // }
+            function verse(animal, noise) {
+                document.write("Old MacDonald had a farm, E I E I O<br>");
+                document.write("And on that farm he had a " + animal + ", E I E I O<br>");
+                document.write("With a " + noise + " " + noise + " here, and a " + noise + " " + noise + " there<br>");
+                document.write("Here a " + noise + ", there a " + noise + ", everywhere a " + noise + " " + noise + "<br>");
+            }
 
             // var animal = "cow";
             // var noise = "moo";
-            // verse();
+            verse("cow", "moo");
 
             // animal = "chicken";
             // noise = "cluck";
-            // verse();
+            verse("chicken", "cluck");
 
             // animal = "duck";
             // noise = "quack";
-            // verse();
+            verse("duck", "quack");
 
             // animal = "horse";
             // noise = "neigh";
-            // verse();
+            verse("horse", "neigh");
 
-            // document.write("Old MacDonald had a farm, E I E I O<br>");
+            document.write("Old MacDonald had a farm, E I E I O<br>");
 
         </script>
     </body>
