@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- <link href="style.css" rel="stylesheet" type="text/css" /> -->
+        <style>
+            /* CSS */
+
+        </style>
+
+        <title>Functions Exercises</title>
+    </head>
+    <body>
+        <!-- HTML -->
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- <script src="script.js"></script> -->
+        <script>
+            // JS
+
+            /********** EXERCISE 1: Basic **********/
+
+            function chorus(){
+                console.log("Walking down the street, feeling the beat, flowing through my feet");
+                // write 3 more lines to this song
+                console.log("I just got some chicken wings, had to get the ranch");
+                console.log("I might just take a bite, then ill hit my little dance");
+                console.log("When i put the ranch on them it puts me in a trance");
+            }
+
+            // chorus();
+            // chorus();
+            // chorus();
+            // You should see the entire chorus three times.
+
+
+
+
+
+
+
+
+            /********** EXERCISE 2: Parameter **********/
+
+            function chorusWithName(name){
+                console.log(name + " stole my heart from the moment we met");
+                // write 3 more lines to this song, using `name` at least one more time
+                console.log(name + " also stole my chicken wings");
+                console.log("Let her keep the drums, but i had to eat the flats");
+                console.log("Dancing all the home with chicken");
+            }
+
+            // chorusWithName("Jesse");
+
+            // call this function two more times, with different names
+            // chorusWithName("Jessica");
+            // chorusWithName("Rebecca");
+
+
+
+
+
+
+
+            /********** EXERCISE 3: Parameters **********/
+
+            function readBook(books,month){
+                // books is an array of strings (book titles)
+                // month is a string (i.e. "January")
+                // remove and print out the first book in the array, and print the month it was read in
+                // hint: It's either .push() or .pop() or .shift() or .unshift()
+                console.log("We will read " + books.shift() + " in " + month);
+            }
+
+            // MODIFY THE CODE ABOVE SO THAT IT PRINTS OUT WHAT YOU SEE IN THE COMMENTS BELOW
+            // DO NOT MODIFY THE CODE BELOW (only uncomment it)
+
+            var briansBooks = ["Harry Potter","Catch 22","Hamlet"];
+            readBook(briansBooks,"February"); // "We will read Harry Potter in February"
+            // console.log(briansBooks)
+            readBook(briansBooks,"November"); // "We will read Catch 22 in November"
+
+            var emilysBooks = ["The Hobbit","To Kill a Mockingbird"]
+            readBook(emilysBooks,"July"); // "We will read The Hobbit in July"
+
+
+
+
+
+
+            /********** EXERCISE 4: Return **********/
+
+            function ableToVote(age){
+                // return "can" or "can't", depending on whether the age is 18+
+
+            }
+
+            // console.log("Abby is 17, so she " + ableToVote(17) + " vote.");
+            // "Abby is 17, so she can't vote."
+
+            // console.log("Bert is 18, so he " + ableToVote(18) + " vote.");
+            // "Bert is 18, so he can vote."
+
+        </script>
+    </body>
+</html>
