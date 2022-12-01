@@ -27,7 +27,16 @@ console.log("You are " + "so ".repeat(5) + "awesome!");
 // You are so so so so so awesome!
 ```
 
-Now write refactored code in `boringPyramidRefactored()` using `.repeat()`. Do NOT write a `for` loop. The result should be EXACTLY the same, but you should be using `.repeat()` for spaces and pound symbols.
+#### `boringPyramidRepeat()`
+Try refactoring by coding in `boringPyramidRepeat()` using `.repeat()`. Do NOT write a `for` loop. The result should be EXACTLY the same, but you should be using `.repeat()` for spaces and pound symbols.
+
+To prepare you for the next function, try making _every_ single line of code in this function look the same, but with different numbers inside the `()` of `.repeat()`. Even though it might seem silly to write something like `.repeat(1)`, it will help you for the next part.
+
+
+#### `boringPyramidFor()`
+Now that you've got the hang of `.repeat()`, try refactoring one more time by coding in `boringPyramidFor()` using a `for` loop. Again, the result should be EXACTLY the same, but you should be using `.repeat()` for spaces and pound symbols.
+
+As a hint, consider naming your counting variable `level`, starting with level 1 (the first/top level).
 
 ### Part II: User Specified Height
 
