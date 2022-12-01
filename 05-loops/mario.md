@@ -31,7 +31,7 @@ Now write refactored code in `boringPyramidRefactored()` using `.repeat()`. Do N
 
 ### Part II: User Specified Height
 
-Add a new feature to your program that asks a user how tall they would like to make the pyramid. This should be a non-negative integer no greater than 23 (this is the tallest that a pyramid can be in Mario land).
+Add a new feature to your program that asks a user how tall they would like to make the pyramid. You can assume they input a non-negative integer no greater than 23 (this is the tallest that a pyramid can be in Mario land).
 
 ### Part III: Chained pyramids
 
