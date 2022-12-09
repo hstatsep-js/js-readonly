@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- <link href="style.css" rel="stylesheet" type="text/css" /> -->
+        <style>
+            /* CSS */
+
+        </style>
+
+        <title>WubWub</title>
+    </head>
+    <body>
+        <!-- HTML -->
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- <script src="script.js"></script> -->
+        <script>
+            // JS
+
+            // 🔥
+
+            // @param lyric is a string
+            // @return a string with "WUB" between every word and before/after the lyrics, all uppercased
+            function wubwub(lyric){
+                // code here
+                var wubWubString = "" // empty string to be populated with a `for` loop
+                var splitWord = lyric.split(" ") // array
+                // console.log(splitWord)
+                for(var i =0;  i < splitWord.length; i++ ){ // go through every word
+                    // splitWord[i] // current word
+                    wubWubString += "wub" // we want "wub" to end up between every word
+                    wubWubString += splitWord[i] // add the current word
+                    console.log(wubWubString)
+                }
+                wubWubString += "wub"; // one more at the end
+                return wubWubString.toUpperCase();
+
+            }
+
+            console.log(wubwub("uptown funk you up"));
+            // "WUBUPTOWNWUBFUNKWUBYOUWUBUPWUB"
+
+            console.log(wubwub("we are the champions my friend"))
+            // "WUBWEWUBAREWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB"
+
+
+        </script>
+    </body>
+</html>
