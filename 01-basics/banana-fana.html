@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- <link href="style.css" rel="stylesheet" type="text/css" /> -->
+        <style>
+            /* CSS */
+
+        </style>
+
+        <title>Title</title>
+    </head>
+    <body>
+        <!-- HTML -->
+
+
+
+        <!-- <script src="script.js"></script> -->
+        <script>
+            // JS
+
+            // INPUT: a four letter name
+            // first letter: consonant
+            // second letter: vowel
+            // examples: jake, rosa, sage
+
+            var name = prompt("What is your name?");
+            // PRO TIP: turn OFF "Auto-run JS" (top-right corner)
+            // Then you can manually "Run with JS"
+
+            // OUTPUT: the banana fana song (see examples below)
+
+            // EXAMPLE 1: (input: "jake")
+            // jake jake bo bake
+            // banana fana fo fake
+            // me mi mo make
+            // jake!
+
+            // EXAMPLE 2: (input: "rosa")
+            // rosa rosa bo bosa
+            // banana fana fo fosa
+            // me mi mo mosa
+            // rosa!
+
+            // EXAMPLE 3: (input: "sage")
+            // sage sage bo bage
+            // banana fana fo fage
+            // me mi mo mage
+            // sage!
+
+            /***** WRITE YOUR CODE BELOW *****/
+
+            // substring
+            var ending = name.substring(1,4);
+
+            // bracket notation
+            // var ending = name[1] + name[2] + name[3]
+
+            document.write(name + " " + name + " bo b" + ending + "<br>");
+            document.write(" banana fana fo f" + ending + "<br>");
+            document.write("me mi mo m" + ending + "<br>");
+            document.write(name + "!");
+            console.log(name.substring(1,4))
+
+        </script>
+    </body>
+</html>
