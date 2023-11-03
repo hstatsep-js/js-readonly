@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- <link href="style.css" rel="stylesheet" type="text/css" /> -->
+        <style>
+            /* CSS */
+
+        </style>
+
+        <title>Conditions Tough/Tougher/Toughest</title>
+    </head>
+    <body>
+        <!-- HTML -->
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- <script src="script.js"></script> -->
+        <script>
+            // JS
+
+            // TOUGH
+            // returns a string statement based on the score
+            function skeeballMessage(score){
+                // 150 or lower is bad
+                // 151-250 is decent
+                // 251-350 is good
+                // 351-450 is great
+                // Above 450 is amazing!!!
+
+                if(score <= 150){
+                    return "Your score is bad";
+                } else if(score <= 250){ // if we've gotten this far, we know the score is at least 151, so we don't need to check
+                    return "Your score is decent";
+                } else if(score <= 350){ // if we've gotten this far, we know the score is at least 251, so we don't need to check
+                    return "Your score is good";
+                } else if(score <= 450){ // if we've gotten this far, we know the score is at least 351, so we don't need to check
+                    return "Your score is great";
+                } else { // if we've gotten this far, we know the score is at least 451, so we don't need to check
+                    return "Your score is amazing!!!";
+                }
+            }
+
+            // use the statements below to test the function
+            document.write("100: " + skeeballMessage(100) + "<br>"); // bad
+            document.write("200: " + skeeballMessage(200) + "<br>"); // decent
+            document.write("300: " + skeeballMessage(300) + "<br>"); // good
+            document.write("400: " + skeeballMessage(400) + "<br>"); // great
+            document.write("500: " + skeeballMessage(500) + "<br>"); // amazing
+
+
+
+
+
+
+            // TOUGHER
+            // should return true on tutoring days (Mondays, Wednesdays) but only for struggling students
+            function shouldAttendTutoring(day, struggling){
+                return ((day == "Monday" || day == "Wednesday") && struggling)
+            }
+
+            // use the statements below to test the function
+            document.write("Monday, not struggling: " + shouldAttendTutoring("Monday",false) + "<br>"); // false;
+            document.write("Monday, struggling: " + shouldAttendTutoring("Monday",true) + "<br>"); // true;
+            document.write("Tuesday, not struggling: " + shouldAttendTutoring("Tuesday",false) + "<br>"); // false;
+            document.write("Tuesday, struggling: " + shouldAttendTutoring("Tuesday",true) + "<br>"); // false;
+            document.write("Wednesday, not struggling: " + shouldAttendTutoring("Monday",false) + "<br>"); // false;
+            document.write("Wednesday, struggling: " + shouldAttendTutoring("Monday",true) + "<br>"); // true;
+
+
+
+
+
+
+            // TOUGHEST
+            // takes in an array of three numbers, returns the middle/median (in between the minimum and maximum)
+            function findMedian(nums){
+                if(nums[0] > nums[1] && nums[0] > nums[2]){ // 0 is max
+                    if(nums[1] > nums[2]){ // 1 is median
+                        return nums[1];
+                    } else { // 2 is median
+                        return nums[2];
+                    }
+                } else if (nums[1] > nums[0] && nums[1] > nums[2]){ // 1 is max
+                    if(nums[0] > nums[2]){ // 0 is median
+                        return nums[0];
+                    } else { // 2 is median
+                        return nums[2];
+                    }
+                } else { // 2 is max
+                    if(nums[0] > nums[1]) { // 0 is median
+                        return nums[0];
+                    } else { // 1 is median
+                        return nums[1];
+                    }
+                }
+            }
+
+            // use the statements below to test the function
+            document.write("[2,1,3] median: " + findMedian([2,1,3]) + "<br>"); // 2;
+            document.write("[1,10,100] median: " + findMedian([1,10,100]) + "<br>"); // 10;
+            document.write("[30,10,20] median: " + findMedian([30,10,20]) + "<br>"); // 20;
+
+
+
+
+
+        </script>
+    </body>
+</html>
