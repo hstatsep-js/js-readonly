@@ -28,9 +28,9 @@ console.log("You are " + "so ".repeat(5) + "awesome!");
 ```
 
 #### `boringPyramidRepeat()`
-Try refactoring by coding in `boringPyramidRepeat()` using `.repeat()`. Do NOT write a `for` loop. The result should be EXACTLY the same, but you should be using `.repeat()` for spaces and pound symbols.
+Let's refactor by coding in `boringPyramidRepeat()` using `.repeat()`. We're not going to use a `for` loop yet. The result should be EXACTLY the same, but let's use `.repeat()` for spaces and pound symbols. The first line has already been done for you. Uncomment the next few lines and fill in the numbers inside the `()`.
 
-To prepare you for the next function, try making _every_ single line of code in this function look the same, but with different numbers inside the `()` of `.repeat()`. Even though it might seem silly to write something like `.repeat(1)`, it will help you for the next part.
+Once you've done that, notice that _every_ single line of code in this function looks the same, but with different numbers inside the `()` of `.repeat()`. Even though it might seem silly to write something like `.repeat(1)`, it will help you for the next part.
 
 
 #### `boringPyramidFor()`
