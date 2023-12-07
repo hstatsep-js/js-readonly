@@ -30,13 +30,20 @@
             function wubwub(lyric){
                 // code here
                 
+                // using .join()
+                // var lyricArray = lyric.split(" ");
+                // var wubLyric = lyricArray.join("WUB");
+                // return "WUB" + wubLyric.toUpperCase() + "WUB";
+
+                // using a `for` loop
                 var lyricArray = lyric.split(" ");
                 var wubLyric = "";
-                for(){
-
+                for(var i = 0; i < lyricArray.length; i++){
+                    wubLyric += 'wub'
+                    wubLyric += lyricArray[i] 
                 }
-
-                return wubLyric;
+                wubLyric += 'wub'
+                return wubLyric.toUpperCase();
             }
 
             console.log(wubwub("uptown funk you up"));
@@ -49,3 +56,4 @@
         </script>
     </body>
 </html>
+
