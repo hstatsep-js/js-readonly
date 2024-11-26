@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- <link href="style.css" rel="stylesheet" type="text/css" /> -->
+        <style>
+            /* CSS */
+
+        </style>
+
+        <title>Title</title>
+    </head>
+    <body>
+        <!-- HTML -->
+
+
+
+        <!-- <script src="script.js"></script> -->
+        <script>
+            // JS
+            
+            var sides = ["heads","tails","heads","heads","tails"];
+            // GOAL: print "3 heads, 2 tails"
+            var headcount = 0
+            var tailcount = 0 
+            for (var i = 0; i < sides.length; i++){
+            //  console.log(sides[i]);
+            // if the current element is heads
+                // add one to headcount
+            // otherwise
+                // add one to the tailscount
+            if (sides[i] == "heads"){
+            headcount += 1;
+            } else {
+            tailcount += 1
+            }
+            }
+
+            console.log(headcount + " " + "Heads")
+            console.log(tailcount + " " + "Tails")
+
+
+
+
+        </script>
+    </body>
+</html>
