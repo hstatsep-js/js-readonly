@@ -66,7 +66,7 @@
                     console.log(" ".repeat(height-level) + "#".repeat(level) + "  " + "#".repeat(level));
                 }
             }
-            // pyramid(14); // to make testing faster, we hard-code a number
+            // pyramid(4); // to make testing faster, we hard-code a number
 
             /* Once ^that^ is working, uncomment the two lines below */
             // var userHeight = prompt("How tall do you want your pyramid to be?"); // now we prompt the user...
@@ -77,20 +77,48 @@
             /* Part III: Chained pyramids */
 
             function chainedPyramids(height,num){
-
+                // loop `num` times
+                for(var i = 0; i < num; i++){
+                    pyramid(height)
+                }
             }
             // chainedPyramids(4,3); // again, let's hard-code some values
 
             /* You can prompt the user if you want to */
-
+            // var userHeight = prompt("How tall do you want each pyramid to be?");
+            // while(userHeight > 100){
+            //     userHeight = prompt("How tall do you want each pyramid to be? Must be below 100");
+            // }
+            // var userNumPyramids = prompt("How many pyramids do you want?");
             
+            // chainedPyramids(userHeight,userNumPyramids);
+
 
             /* Part IV: Every-Other-Upside-Down Pyramid */
 
-            function chainedPyramidsAlternating(height,num){
-
+            // helper function
+            function pyramidInverted(height){
+                for(var level = height; level >= 1; level--){ 
+                    console.log(" ".repeat(height-level) + "#".repeat(level) + "  " + "#".repeat(level));
+                }
             }
-            // chainedPyramidsAlternating(4,3);
+
+            function chainedPyramidsAlternating(height,num){
+                // pyramid(height);
+                // pyramidInverted(height);
+                // pyramid(height);
+                // pyramidInverted(height);
+                
+                // loop `num` times
+                for(var i = 0; i < num; i++){
+                    if(i % 2 == 0){ // even
+                        pyramid(height)
+                    } else { // odd
+                        pyramidInverted(height);
+                    }
+                }
+            }
+            // chainedPyramidsAlternating(4,17);
 
             /* You can prompt the user if you want to */
             
