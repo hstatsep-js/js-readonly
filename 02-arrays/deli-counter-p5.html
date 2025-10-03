@@ -50,48 +50,49 @@
 
             // TASK 1: change "Charles" to "Charlie"
             /* code below 👇 */
-
+            // var Charles = "Charlie";
+            waitlist[1] = "Charlie";
             /* code above 👆 */
-            // console.log("Charles now goes by Charlie.");
-            // console.log("Task 1: waitlist is " + waitlist);
+            console.log("Charles now goes by Charlie.");
+            console.log("Task 1: waitlist is " + waitlist);
             // should be "Ada,Charlie,Grace"
 
 
             // TASK 2: add "Alan" to the end of the waitlist
             /* code below 👇 */
-
+            waitlist.push("Alan");
             /* code above 👆 */
-            // console.log("Hey, Alan just walked in!");
-            // console.log("Task 2: waitlist is " + waitlist);
+            console.log("Hey, Alan just walked in!");
+            console.log("Task 2: waitlist is " + waitlist);
             // should be "Ada,Charlie,Grace,Alan"
 
 
             // TASK 3: remove the last person in line and
             // save their name in a variable named `kickedOut`
             /* code below 👇 */
-
+            kickedOut = waitlist.pop();
             /* code above 👆 */
-            // console.log("Oops! " + kickedOut + " was being rowdy and had to be kicked out.")
-            // console.log("Task 3: waitlist is " + waitlist);
+            console.log("Oops! " + kickedOut + " was being rowdy and had to be kicked out.")
+            console.log("Task 3: waitlist is " + waitlist);
             // should be "Ada,Charlie,Grace"
 
 
             // TASK 4: remove the first person in line and
             // save their name in a variable named `nowServing`
             /* code below 👇 */
-
+            var nowServing = waitlist.shift()
             /* code above 👆 */
-            // console.log("Now serving: " + nowServing)
-            // console.log("Task 4: waitlist is " + waitlist);
+            console.log("Now serving: " + nowServing)
+            console.log("Task 4: waitlist is " + waitlist);
             // should be "Charlie,Grace"
 
 
             // TASK 5: add "CEO" to the front of the list
             /* code below 👇 */
-
+            waitlist.unshift("CEO")
             /* code above 👆 */
-            // console.log("The CEO just walked in! Let them cut the line!");
-            // console.log("Task 5: waitlist is " + waitlist);
+            console.log("The CEO just walked in! Let them cut the line!");
+            console.log("Task 5: waitlist is " + waitlist);
             // should be "CEO,Charlie,Grace"
 
 
